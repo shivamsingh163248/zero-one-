@@ -1,10 +1,11 @@
 /*for logo configation*/
 #sectionlogo{
-    width: 100%;
+    width: 50%;
     height: auto;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;    
+    margin-top: 100px;
+    margin-left: 30%;
+    margin-right:10px; 
+    overflow: hidden;  
 }
 
   /* Create two equal columns that floats next to each other */
@@ -15,10 +16,10 @@
     height: 700px; /* Should be removed. Only for demonstration */
   }
   .left {
-    width: 25%;
+    width: 50%;
   }
   .right{
-      width: 75%;
+      width: 50%;
   }
   
   /* Clear floats after the columns */
@@ -35,10 +36,15 @@
     }
 }
 #h1font{
-    font-size: 200%;
+    font-size: 30px;
     text-align: center;
+
+    
 }
 #organization{
-    font-size: 300%;
+    font-size: 50px;
     text-align: center;
+}
+.linesize{
+  line-height: 0.1px;
 }
