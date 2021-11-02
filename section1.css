@@ -35,6 +35,10 @@
     }
 }
 #h1font{
+    font-size: 200%;
+    text-align: center;
+}
+#organization{
     font-size: 300%;
     text-align: center;
 }
