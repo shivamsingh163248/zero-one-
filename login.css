@@ -15,7 +15,7 @@
   
   .container {
   
-    background-color:rgba(221, 221, 221, 0.678); 
+    background-color:inherit; 
     width: 80%;
     height: 100%;
     border: 1px solid rgb(122, 9, 9);

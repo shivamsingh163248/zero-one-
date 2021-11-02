@@ -88,12 +88,14 @@ body {
 
   /*this is foe the frist section */
   .section1{
-    background-image: url("3004560.jpg");;
+    background-image: url("3004560.jpg");
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
     height: auto;
+    
     
    
     
