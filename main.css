@@ -10,7 +10,7 @@ body {
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: right;
+    float: left;
     display: block;
     color: #f8f6f6;
     text-align: center;
@@ -32,7 +32,7 @@ body {
   
   /* Dropdown container - needed to position the dropdown content */
   .dropdown {
-    float: right;
+    float: left;
     overflow: hidden;
   }
   
@@ -86,22 +86,11 @@ body {
     display: block;
   }
 
-  /*this is foe the frist section  background image if we want put url in image and remove the 
-  background colour*/
-  .section1{
-    background-image: url("1234.jp");
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: scroll;
-    height: auto;
-    
-    
+ 
    
     
     
-  }
+  
   
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
   @media screen and (max-width: 600px) {
@@ -110,7 +99,7 @@ body {
       display: none;
      }
     .topnav a.icon {
-      float: left;
+      float: right;
       display:block;
     }
   }

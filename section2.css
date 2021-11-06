@@ -1,0 +1,22 @@
+.section2{
+    background-image: url("1234.jp");
+    background-color: rgba(121, 89, 89, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    height: auto;
+    box-sizing: border-box;
+}
+
+
+video
+  {
+       width: 100%;
+       height: 400px;
+       
+  }
+
+
+
+    
