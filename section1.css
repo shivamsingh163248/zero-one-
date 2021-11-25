@@ -1,14 +1,15 @@
  /*this is foe the frist section  background image if we want put url in image and remove the 
   background colour*/
   .section1{
-    background-image: url("1234.jp");
-    background-color: rgb(0, 0, 0);
+    background-image: url("2396212.jpg");
+    background: linear-gradient(to right, #003300 -10%, #0d0d63 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: scroll;
+    background-attachment: fixed;
     height: auto;
     box-sizing: border-box;
+    
 
 
   }
@@ -17,10 +18,12 @@
 #sectionlogo{
     width: 50%;
     height: auto;
-    margin-top: 100px;
-    margin-left: 28%;
-    margin-right:10px; 
-    overflow: hidden;  
+    margin-top: 40px;
+    margin-left: auto;
+  margin-right: auto;
+    display: block;
+    overflow: hidden; 
+    
 }
 
   /* Create two equal columns that floats next to each other */
@@ -28,7 +31,7 @@
     float: left;
     
     padding: 1%;
-    height: 700px; /* Should be removed. Only for demonstration */
+    height: 650px; /* Should be removed. Only for demonstration */
   }
   .left {
     width: 50%;
@@ -43,7 +46,9 @@
     display: table;
     clear: both;
   }
-  
+  .linesize{
+    line-height: 0.1px;
+  }
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
@@ -51,16 +56,18 @@
     }
 }
 /*for font size and line distance between them */
-#h1font{
-    font-size: 30px;
+.veer{
+     
     text-align: center;
+    color: white;
+    font-size: 25px;
+    
 
     
 }
-#organization{
-    font-size: 50px;
-    text-align: center;
-}
-.linesize{
-  line-height: 0.1px;
+.purvanchal{
+     
+  text-align: center;
+  color: white;
+  font-size: 35px;
 }
