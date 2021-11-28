@@ -1,0 +1,212 @@
+ /*this is foe the frist section  background image if we want put url in image and remove the 
+  background colour*/
+  .section1{
+    background-image: url("2396212.jpg");
+    background: linear-gradient(to right, #070816 -10%, #25256d 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: auto;
+    box-sizing: border-box;
+    
+
+
+  }
+    
+    /*for logo configation*/
+#sectionlogo{
+    width: 70%;
+    max-width: 250px;
+    height: auto;
+    margin-top: 50px ;
+    margin-left: auto;
+  margin-right: auto;
+    display: block;
+    overflow: hidden; 
+    
+}
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    
+    padding: 1%;
+    height: auto; /* Should be removed. Only for demonstration */
+  }
+  .left {
+    width: 100%;
+  }
+  .right{
+      width: 0%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .linesize{
+    line-height: 0.1px;
+  }
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+/*for font size and line distance between them */
+.veer{
+     
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    
+
+    
+}
+.purvanchal{
+     
+  text-align: center;
+  color: white;
+  font-size: 35px;
+}
+.logoheading{
+     
+  background-color:inherit;
+  width: 100%;
+  border: 0px solid rgb(128, 35, 6);
+  padding: 1px;
+  margin: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+#organizationname{
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  
+  font-family: 'Playfair Display', serif;
+
+}
+#university{
+  text-align: center;
+color: white;
+font-size: 50px;
+
+font-family: 'Playfair Display', serif;
+}
+/*resposive for the unvesity name*/
+@media screen and (max-width: 600px) {
+  #organizationname {
+    font-size: 20px;
+  }
+  #university{
+    font-size: 30px;
+  }
+
+}
+
+/*button on the veer bahdur singh purvanchal university*/
+.btne {
+  border: 2px solid black;
+  border-radius: 40px;
+  background-color: inherit;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.danger {
+  border-color: #f5f0f0;
+  color: rgb(240, 223, 223)
+}
+
+.danger:hover {
+  background: #643e05;
+  color: white;
+}
+  /* secon button */
+  .button {
+    border-radius:50px;
+    background-color: inherit;
+    border-color: yellow;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border: 3px solid rgb(94, 95, 40);
+ 
+    
+    
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.8s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.8s;
+  }
+  
+  .button:hover span {
+    padding-right: 20px;
+      
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+      
+  }
+  
+  .button:hover  {
+    border-color: #a83f0e;
+    color: rgb(15, 29, 44);
+    background-color: #f4f7f6;
+      
+  }
+  .login{
+   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    background-color:inherit;
+  width: 100%;
+  border: 0px solid rgb(128, 35, 6);
+  padding: 1px;
+  margin: 1px;
+    
+    
+
+  }
+  @media screen and (max-width: 600px) {
+    .login {
+      display: grid;
+    }
+    
+  
+  }
+  
+
+  
+  
+  
+

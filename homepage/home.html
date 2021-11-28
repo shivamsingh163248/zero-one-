@@ -10,16 +10,19 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="section1.css">
-    <link rel="stylesheet" href="section2.css">
     <script src="main.js"></script>
-
+    <script src="scroll.js"></script>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Playfair+Display&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
 
 
 </head>
 
 <body>
     <div class="topnav" id="nevigation">
-        <a href="#home" class="active">Home</a>
+        <a href="login.html" class="active">Home</a>
         <a href="#services" class="services">services</a>
         <a href="#contact" class="contacts">contacts</a>
         <div class="dropdown">
@@ -34,9 +37,6 @@
 
         </div>
         <a href="#call">call</a>
-        <a class="nav-link" href="#"> <img src="https://img.icons8.com/metro/26/000000/guest-mal.png">
-            <?php echo "Welcome ". $_SESSION['username']?>
-        </a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 
     </div>
@@ -58,40 +58,23 @@
                 </h1>
 
 
+
             </div>
             <div class="column right" style="background-color: inherit;">
 
-                <form action="/action_page.php">
-                    <div class="container">
-                        <div class="line1">
-                            <h1 style="font-size: 40px;">Log In</h1>
-                            <p>Welocome in Zero-One Organization</p>
-                            <hr>
+                <div class="logoheading" id="organizationname">
+                    Veer Bahdur singh<br> Purvanchal  Unviversity</div>
+                    <hr>
 
-                            <label for="email"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-
-                            <hr>
-                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
-                            <button type="submit" class="registerbtn">Login</button>
-
-
-                            <div class="container-signin">
-                                <p>You have Not Account Creat here? <a href="#">Register</a>.</p>
-                            </div>
-                        </div>
-                </form>
+                    <button class="btne danger">CLICK HEAR</button>
+                    <button class="button"><span>click hear my name </span></button>
             </div>
+            
+        </div>>
     </section>
     <section class="section2">
-        <video autoplay loop src="logo123.mp4">
-
-        </video>
+        <img src="loo.png" alt="">
+    </section>
 
 
 </body>
