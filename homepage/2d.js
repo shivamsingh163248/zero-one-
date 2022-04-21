@@ -23,4 +23,4 @@ const changeSlide = (direction) => {
  }px)`;  
 };  
 upButton.addEventListener("click", () => changeSlide("up"));  
-downButton.addEventListener("click", () => changeSlide("down"));  
+downButton.addEventListener("click", () => changeSlide("down")); 

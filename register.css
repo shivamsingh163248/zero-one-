@@ -1,0 +1,128 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background:inherit;
+  color: #ffffff;
+  min-width: 50px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  
+}
+
+.input-field:focus {
+  border: 3px solid rgb(15, 227, 12);
+}
+
+/* Set a style for the submit button */
+.btn {
+    border-radius:50px;
+    background-color: inherit;
+    border-color: yellow;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    
+    cursor: pointer;
+    margin: 5px;
+    border: 3px solid rgb(255, 255, 255);
+  
+ 
+}
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.8s;
+  }
+  
+  .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.8s;
+  }
+  
+  .btn:hover span {
+    padding-right: 20px;
+      
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+      
+  }
+
+  .btn:hover  {
+    border-color: #a83f0e;
+    color: rgb(15, 29, 44);
+    background-color: #f4f7f6;
+      
+  }
+
+.registertitlename{
+    text-align: center;
+    display: block;
+    padding-bottom: 30px;
+}
+.registervbspu{
+
+    padding: 20px;
+    margin: auto;
+    background-color:inherit; 
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+    border-radius: 30px;
+    border-style: outset;
+    border-width: 3px;
+    border-color: rgb(215, 213, 213);
+    background: linear-gradient(to right, #070816 -10%, #0d0d63 100%);
+  
+}
+p{
+    color: rgb(160, 12, 12);
+    text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+a:link {
+    color: rgb(248, 244, 244);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(204, 244, 162);
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
