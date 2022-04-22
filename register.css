@@ -1,11 +1,15 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
+#registerlogo{
+  width: 160px;
+  height: 160px;
+}
 
 .input-container {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .icon {
@@ -16,6 +20,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
   text-align: center;
   border-radius: 20px;
 }
+ .iconname{
+    display: none;
+}
+
 
 .input-field {
   width: 100%;
@@ -108,21 +116,57 @@ p{
 .btn:hover {
   opacity: 1;
 }
-a:link {
+.registervbspu a:link {
     color: rgb(248, 244, 244);
   }
   
   /* visited link */
-  a:visited {
-    color: rgb(255, 255, 255);
+ .registervbspu a:visited {
+    color: rgb(241, 241, 241);
   }
   
   /* mouse over link */
-  a:hover {
-    color: rgb(204, 244, 162);
+  .registervbspu a:hover {
+    color: rgb(255, 30, 0);
   }
   
   /* selected link */
-  a:active {
+  .registervbspu a:active {
     color: blue;
+  }
+  .registerfooter{
+    text-align: center;
+    box-sizing: border-box;
+    color: #aeaaaa;
+    
+   
+  }
+  @media screen and (max-width: 600px) {
+  .registervbspu{
+    margin-top: 1px;
+  }
+  .input-container {
+    display: grid;
+    margin-bottom: 10px;
+  }
+  .icon {
+    padding: 5px;
+    background:inherit;
+    color: #ffffff;
+    min-width: 50px;
+    text-align: left;
+    border-radius: 20px;
+  }
+  .iconname{
+    display: inline;
+}
+#registerlogo{
+  width: 130px;
+  height: 130px;
+  margin-bottom: 1px;
+}
+
+
+
+ 
   }
