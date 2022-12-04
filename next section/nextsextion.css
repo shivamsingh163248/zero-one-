@@ -1,0 +1,47 @@
+body {
+    margin:0;
+    font-family:Arial
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  
+  
+  .row45 .column {
+    float: left;
+    padding: 1px;
+    height: 400px; /* Should be removed. Only for demonstration */
+  }
+  
+  .row45 .left {
+    width: 40%;
+  }
+  
+  .row45 .right {
+    width: 60%;
+  }
+  
+  /* Clear floats after the columns */
+  .row45 .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+
+  /* now hear we make thwe i fram css*/
+  
+
+  
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .row45 .column {
+      width: 100%;
+    }
+  }

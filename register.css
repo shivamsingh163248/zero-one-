@@ -34,7 +34,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 .input-field:focus {
-  border: 3px solid rgb(15, 227, 12);
+  border: 3px solid rgb(244, 230, 151);
 }
 
 /* Set a style for the submit button */
@@ -100,7 +100,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     background-color:inherit; 
     width: 100%;
     height: 100%;
-    margin-top: 70px;
+    margin-top: 75px;
     border-radius: 30px;
     border-style: outset;
     border-width: 3px;
@@ -141,6 +141,56 @@ p{
     
    
   }
+
+
+
+/* now we are the use for the testing purpose*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: white;
+  padding-top: 50px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 100px;
+  top:20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 850px) {
+
+  .close {
+  right: 20px;
+  top:50px;
+  }
+
+}
+
+
   @media screen and (max-width: 600px) {
   .registervbspu{
     margin-top: 1px;
@@ -165,6 +215,20 @@ p{
   height: 130px;
   margin-bottom: 1px;
 }
+  }
+
+
+@media screen and (max-width: 550px) {
+
+.close {
+  
+  right: 20px;
+  top:50px;
+  font-size: 40px;
+  font-weight: lighter;
+  color: #f1f1f1;
+}
+
 
 
 
