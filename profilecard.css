@@ -3,23 +3,33 @@
  }
 
  body {
+     align-items: center;
      font-family: Verdana, sans-serif;
      margin: 0;
+     padding: 0;
+     display: flex;
+
  }
 
  .mySlides {
-     display: none;
+     display: flex;
+     width: 100%;
+     height: 490px;
+     justify-items: center;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
  }
 
  img {
      vertical-align: middle;
+     margin: 10px;
  }
 
  /* Slideshow container */
  .slideshow-container {
-     height: 540px;
+     height: 490px;
      background-color: #f1ebfb;
-     max-width: 100%;
+     width: 100%;
      position: relative;
      margin: auto;
 
@@ -98,25 +108,14 @@
      }
  }
 
- /* On smaller screens, decrease text size */
- @media only screen and (max-width: 600px) {
-
-     .prev,
-     .next,
-     .text {
-         font-size: 11px;
-     }
- }
-
-
-
  .card {
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
      text-align: center;
      margin-top: 80px;
-     margin-left: 100px;
-     margin-right: 120px;
-     padding: 25px;
+     margin-left: 10px;
+     margin-right: 10px;
+     border-radius: 25px;
+     background-color: #FFF;
  }
 
  .title {
@@ -135,6 +134,7 @@
      cursor: pointer;
      width: 80px;
      font-size: 18px;
+     margin: 14px;
  }
 
  a {
@@ -157,7 +157,33 @@
 
  .btn {
      display: inline-block;
-     width: 450px;
-     margin-left: 25px;
-     margin-right: 10px;
+     width: 20%;
+     margin-left: 3%;
+     /*margin-right: 50px;*/
+ }
+
+ /* On smaller screens, decrease text size */
+ @media only screen and (min-width: 200px) and (max-width:767px) {
+
+     .prev,
+     .next,
+     .text {
+         font-size: 11px;
+     }
+ }
+
+ @media only screen and (min-width: 200px) and (max-width:767px) {
+     .btn {
+         width: 100%;
+     }
+
+     .card {
+         margin: 10px;
+     }
+ }
+
+ @media only screen and (max-width:468px) {
+     .mySlides {
+         width: 100%;
+     }
  }
