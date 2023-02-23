@@ -1,5 +1,261 @@
-.mySlides {display:none}
-.w3-button {
-    background-color: aquamarine;
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides_teacher {display: none}
+
+
+/* Slideshow container */
+.slideshow-container_teacherprofile {
+ 
+  width: 100%;
+  height: 500px;
+  position: relative;
+ 
+  background-color: #ee7f7f;
+}
+
+/* Next & previous buttons */
+.nextprev .prev, .nextprev .next {
+  cursor: pointer;
+  position: absolute;
+  margin: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: 1px;
+  color: rgb(210, 205, 205);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgb(186, 120, 41);
+}
+
+/* Position the "next button" to the right */
+.nextprev .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.nextprev .prev:hover, .nextprev .next:hover {
+  background-color: rgba(45, 50, 45, 0.8);
+}
+
+/* Caption text 
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+ Number text (1/3 etc) */
+/* .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+*/
+
+/* The dots/bullets/indicators */
+.dott1 {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 0%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  text-align: center;
+  font-size: 20px;
+  
+}
+
+.active, .dott1:hover {
+  background-color: #dc2e2e;
+}
+
+/* Fading animation */
+.fade23 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* using the card css */
+.teacher_detail .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    width: 20%;
     
+    
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    font-family: arial;
+    position: relative;
+    display: inline-block;
+    
+    box-sizing: content-box;
+    margin-top: 50px;
+  }
+  
+  .teacher_detail .card .img{
+    width: 150px;
+    height: 150px;
+  }
+  .teacher_detail .card #cardlink{
+    margin: 24px 0;
+  }
+  
+  
+  .teacher_detail .card .title {
+    color: grey;
+    font-size: 20px;
+  }
+  
+  .teacher_detail .card button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .teacher_detail .card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  .teacher_detail .card p{
+    font-size: 15px;
+  }
+  .teacher_detail .card #card_autheraa_text_size{
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+.teacher_detail button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .teacher_detail .card .img{
+        width: 90px;
+        height: 90px;
+      }
+      .teacher_detail .card #cardlink{
+        margin: 2px 0;
+      }
+      .teacher_detail .card .title {
+        
+        font-size: 12px;
+      }
+      .teacher_detail .card button {
+        padding: 5px;
+        font-size: 12px;
+      }
+      .teacher_detail .card a {
+        
+        font-size: 12px;
+      }
+      .teacher_detail .card p{
+        font-size: 8px;
+      }
+      .teacher_detail .card #card_autheraa_text_size{
+        font-size: 15px;
+        font-weight: 900;
+      }
+      .slideshow-container_teacherprofile {
+ 
+        
+        height: 320px;
+        
+      }
+      .nextprev .prev, .nextprev .next {
+        margin: 25%;
+  
+  padding: 12px;
+  font-size: 10px;
+  margin-top: 10px;
+      }
+
+      
+  }
+  @media only screen and (max-width: 600px) {
+    .teacher_detail .card .img{
+        width: 50px;
+        height: 50px;
+      }
+      .teacher_detail .card #cardlink{
+        margin: 1px 0;
+      }
+      .teacher_detail .card .title {
+        
+        font-size: 5px;
+      }
+      .teacher_detail .card button {
+        padding: 4px;
+        font-size: 7px;
+      }
+      .teacher_detail .card a {
+        
+        font-size: 7px;
+      }
+      .teacher_detail .card p{
+        font-size: 5px;
+      }
+      .teacher_detail .card #card_autheraa_text_size{
+        font-size: 7px;
+        font-weight: 900;
+      }
+      .teacher_detail .card {
+        margin-left: 2%;
+        margin-right:2%;
+        width: 19%;
+        margin-top: 20px;
+      
+        
+      }
+      .slideshow-container_teacherprofile {
+ 
+        
+        height: 200px;
+        
+      }
+      .nextprev .prev, .nextprev .next {
+        margin: 10%;
+  
+  padding: 9px;
+  font-size: 9px;
+  margin-top: 10px;
+      }
+      .dott1 {
+        
+        height: 10px;
+        width: 10px;
+        
+        font-size: 8px;
+        
+      }
+      
+  }
+
+@keyframes fade23 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
