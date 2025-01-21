@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  .linknotificationrow .linknotificationstrecture .column {
+    float: left;
+    padding: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+    
+  }
+  .linknotificationstrecture{
+    box-sizing: border-box;
+    
+  }
+  
+  .linknotificationrow .linknotificationstrecture .left {
+    width: 60%;
+    background: linear-gradient(to right, #dad9d9 -10%, #ffffff 100%);
+  }
+  
+  .linknotificationrow .linknotificationstrecture .right {
+    width: 40%;
+    background: linear-gradient(to right, #ffffff 10%, #d8d7d7 100%);
+  }
+  
+  /* Clear floats after the columns */
+  .linknotificationrow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+   .linknotificationstrecture {
+    
+    background-color: #c33c3c;
+  }
+  .linknotificationrow .link_notification_box {
+    height: 300px;
+     margin-top: 100px;
+     margin-left: 4%;
+     width: 90%;
+    overflow: hidden;
+    position: relative;
+    background: #ffffff;
+    color: #333;
+    border: 0px solid #9c4343;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.linknotificationrow .linknotificationstrecture .marquees {
+    height: 400px;
+     margin-top: 20px;
+     width: 90%;
+    overflow: hidden;
+    position: relative;
+    background: #ffffff;
+    color: #333;
+    border: 0px solid #9c4343;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.linknotificationstrecture .marquees p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 20px;
+    text-align: left;
+    padding-top: 300px;
+    margin-left: 10px;
+   
+    -moz-animation: marquees 1s linear infinite;
+    -webkit-animation: marquees 1s linear infinite;
+    animation: marquees 10s linear infinite;
+}
+
+
+
+
+ 
+  @-moz-keyframes  marquees {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, -100%);
+    }
+  }
+  @-webkit-keyframes marquees {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, -100%);
+    }
+  }
+  @keyframes marquees {
+    0% {
+      -moz-transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+    100% {
+      -moz-transform: translate(0, -100%);
+      -webkit-transform: translate(0, -100%);
+      transform: translate(0, -100%);
+    }
+  }
+
+  /*  using the blinking tag */
+
+  .link_notification_box .blink {
+    animation: blinker 2.5s linear infinite;
+    color: red;
+    margin-left: 10px;
+}
+.link_notification_box .blink:hover{
+    animation: none;
+    cursor: pointer;
+}
+
+.link_notification_box a:link {
+    color: rgb(128, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  .link_notification_box a:visited {
+    color: rgb(19, 95, 7);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  .link_notification_box a:hover {
+    color: rgb(51, 0, 255);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  .link_notification_box a:active {
+    color: rgb(178, 178, 9);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+
+
+
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+        color: rgb(0, 0, 0);
+    }
+}
+
+
+
+  @media screen and (max-width: 600px) {
+    .linknotificationrow .linknotificationstrecture .column {
+      width: 100%;
+      background: linear-gradient(to right, #ffffff 10%, #ffffff 100%);
+    }
+    .linknotificationrow .link_notification_box {
+        height: 100%;
+         margin-top: 1px;
+         margin-left: 1%;
+         margin-right: 1%;
+         width: 98%;
+        
+    }
+    
+.linknotificationrow .linknotificationstrecture .marquees {
+    height: 100%;
+     margin-top: 2px;
+     width: 100%;
+    
+    
+}
+
+    
+  }
+  
