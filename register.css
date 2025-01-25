@@ -192,12 +192,8 @@ p{
 
 
   @media screen and (max-width: 600px) {
-  .registervbspu{
-    margin-top: 1px;
-  }
-  .input-container {
-    display: grid;
-    margin-bottom: 10px;
+  .{
+   
   }
   .icon {
     padding: 5px;
